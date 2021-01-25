@@ -26,66 +26,9 @@
 
 /*шапка*/
 
-.header-border {
-  border-bottom: 1px solid #ececec;
-}
-
 /*страница портфолио*/
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
-.button-filter {
-  display: inline-block;
-  font-family: inherit;
-  border-style: none;
-  padding: 6px 22px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  border-radius: 4px;
-  padding: 6px 22px;
-  cursor: pointer;
-  transition-property: color, background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.button-filter:hover,
-.button-filter:focus {
-  color: var(--bgc-accent-text-color);
-  background-color: var(--button-bgc);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  outline: none;
-}
-
-.button-list {
-  display: flex;
-  margin-bottom: 56px;
-  justify-content: center;
-}
-
-.button-item {
-  margin-right: 8px;
-}
-
-.button-item:last-child {
-  margin-right: 0;
-}
-
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0;
-}
-
-.porfolio-item {
-  width: calc((100%-60px) / 3);
-  margin-right: 30px;
 }
 
 .portfolio-item {
@@ -94,62 +37,7 @@
   cursor: pointer;
 }
 
-.portfolio-item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
-}
 
-.portfolio-item:nth-child(3n) {
-  margin-right: 0;
-}
-
-.portfolio-link {
-  display: block;
-  text-decoration: none;
-}
-
-.portfolio-link:hover,
-.portfolio-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  outline: none;
-}
-.filter-image {
-  display: block;
-  position: relative;
-}
-.filter-image-overlay {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(33, 150, 243, 0.9);
-  transform: translateY(100%);
-  opacity: 0;
-  transition-property: transform, opacity, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.fitler-image-summary {
-  font-size: 18px;
-  line-height: 1.6;
-  color: var(--bgc-accent-text-color);
-  padding: 63px 24px;
-}
-.portfolio-link:hover .filter-image-overlay,
-.portfolio-link:focus .filter-image-overlay {
-  transform: translateY(0);
-  opacity: 1;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.card-content {
-  padding: 20px 24px;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-}
 .filter-name {
   font-size: 18px;
   line-height: 2;
