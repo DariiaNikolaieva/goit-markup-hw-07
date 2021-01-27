@@ -10,7 +10,9 @@ $color: (
   'bgc-secondary': #f5f4fa,
   'bgc-dark-accent': #2f303a,
   ///////////////////////// Button color
-  'button': #2196f3
+  'button': #2196f3,
+  ///////////////////////// SVG color
+  'icon': #afb1b8
 );
 
 @function getColor($key) {

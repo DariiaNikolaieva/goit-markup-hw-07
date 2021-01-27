@@ -200,7 +200,7 @@ input {
   color: var(--bgc-accent-text-color);
   background-color: var(--button-bgc);
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
@@ -262,7 +262,7 @@ input {
   background-size: 70px;
 }
 .benefit__name {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
@@ -406,7 +406,7 @@ input {
   padding-bottom: 94px;
 }
 .clients__title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
@@ -479,7 +479,7 @@ input {
 .join__title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;

@@ -12,5 +12,3 @@ $font-size: (
 @function getFont-size($key) {
   @return map-get($font-size, $key);
 }
-
-$line-height: ('');

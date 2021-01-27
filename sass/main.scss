@@ -1,9 +1,22 @@
-@import 'abstracts/mixins';
-@import 'abstracts/placeholders';
 @import 'base/colors';
 @import 'base/reset';
-@import 'base/typography';
+@import 'base/normalize' @import 'base/typography';
+
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
+
 @import 'layout/header';
 @import 'layout/logo';
 @import 'layout/navigation';
 @import 'layout/header-contacts';
+@import 'layout/hero';
+@import 'layout/benefits';
+@import 'layout/activity';
+@import 'layout/team';
+@import 'layout/clients';
+@import 'layout/footer-contacts';
+@import 'layout/footer-join';
+@import 'layout/footer-subscribe';
+@import 'layout/modal';
+@import 'layout/modal-input';
+@import 'layout/modal-agreement';
