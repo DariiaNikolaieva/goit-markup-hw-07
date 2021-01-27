@@ -1,3 +1,5 @@
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
 @import 'base/colors';
 @import 'base/reset';
 @import 'base/typography';
@@ -5,5 +7,3 @@
 @import 'layout/logo';
 @import 'layout/navigation';
 @import 'layout/header-contacts';
-@import 'abstracts/mixins';
-@import 'abstracts/placeholders';
