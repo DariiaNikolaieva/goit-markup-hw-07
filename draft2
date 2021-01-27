@@ -1,163 +1,14 @@
-:root {
-  /*цвет текста*/
-  --main-text-color: #212121;
-  --secondary-text-color: #757575;
-  --accent-text-color: #2196f3;
-  --bgc-accent-text-color: #ffffff;
-  --footer-addressbox-text-color: rgba(255, 255, 255, 0.6);
-  /*цвет фона*/
-  --main-bgc: #ffffff;
-  --secondary-bgc: #f5f4fa;
-  --accent-bgc: #2f303a;
-  --header-bgc: #ffffff;
-  --button-bgc: #2196f3;
-}
 /*************** COMMON ***************/
-body {
-  color: var(--main-text-color);
-  background-color: var(--main-bgc);
-  font-family: Roboto, sans-serif;
-  letter-spacing: 0.03em;
-}
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-a {
-  color: var(--main-text-color);
-  text-decoration: none;
-}
-h1,
-h2,
-h3,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-textarea {
-  resize: none;
-  padding: 0;
-}
-input {
-  margin: 0;
-  padding: 0;
-}
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding: 0 15px;
-}
-:active,
-:hover,
-:focus {
-  outline-color: var(--button-bgc);
-  outline-offset: 0;
-}
+
 /*************** HEADER ***************/
-.header {
-  background-color: var(--main-bgc);
-}
-.header__container {
-  display: flex;
-  align-items: center;
-}
 
 /*************** HEADER-LOGO ***************/
-.logo {
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
-}
-.logo__header {
-  margin-right: 93px;
-}
-.logo__accent {
-  color: var(--accent-text-color);
-}
 
 /*************** HEADER-NAVIGATION ***************/
-.site-nav__list {
-  display: flex;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-}
-.site-nav__item:not(:last-child) {
-  margin-right: 50px;
-}
-.site-nav__link {
-  display: block;
-  padding-bottom: 32px;
-  padding-top: 32px;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.site-nav__link:hover,
-.site-nav__link:focus {
-  color: var(--accent-text-color);
-  outline: none;
-}
-.site-nav__link--current {
-  color: var(--accent-text-color);
-}
 
 /***************HEADER CURRENT-PAGE UNDERLINE ***************/
-.site-nav__item {
-  position: relative;
-}
-.site-nav__link--current::after {
-  position: absolute;
-  content: '';
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--button-bgc);
-  margin-top: 28px;
-}
 
 /*************** HEADER-CONTACTS ***************/
-.contacts {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  display: flex;
-  margin-left: auto;
-}
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
-}
-.contacts__link {
-  display: flex;
-  align-items: center;
-  color: var(--secondary-text-color);
-  padding-bottom: 32px;
-  padding-top: 32px;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.contacts__link:hover,
-.contacts__link:focus {
-  color: var(--accent-text-color);
-  outline: none;
-}
-.contacts__icon {
-  height: 16px;
-  margin-right: 10px;
-  fill: currentColor;
-}
 
 /*************** MAIN ***************/
 
@@ -385,9 +236,7 @@ input {
   border: none;
   border-radius: 50%;
   fill: #afb1b8;
-  transition-property: color, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(color, background-color);
 }
 .team__social-icon {
   width: 20px;
@@ -410,7 +259,6 @@ input {
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 .clients__list {
   display: flex;
@@ -427,9 +275,7 @@ input {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
-  transition-property: color, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(color, border);
 }
 .clients__link:focus,
 .clients__link:hover {
@@ -465,9 +311,6 @@ input {
 .footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
-.address {
-  font-style: normal;
-}
 .addressbox {
   color: var(--footer-addressbox-text-color);
 }
@@ -479,8 +322,7 @@ input {
 .join__title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  line-height: 1.1;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
@@ -500,9 +342,7 @@ input {
   border-radius: 50%;
   fill: var(--main-bgc);
   background-color: rgba(255, 255, 255, 0.1);
-  transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(background-color);
 }
 .join__icon {
   width: 20px;
@@ -522,7 +362,6 @@ input {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .subscribe__button-form {
@@ -540,9 +379,7 @@ input {
   padding: 15px 16px;
   width: 358px;
   margin-right: 12px;
-  transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(border-color);
 }
 .subscribe__input:focus,
 .subscribe__input:hover {
@@ -580,9 +417,7 @@ input {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition-property: opacity, transform;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(opacity, transform);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -602,9 +437,7 @@ input {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
-  transition-property: transform, scale;
-  transition-duration: 500ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(transform, scale);
 }
 .modal__close-button {
   position: absolute;
@@ -630,7 +463,7 @@ input {
 .form__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.1;
   text-align: center;
   margin-bottom: 12px;
 }
@@ -656,9 +489,7 @@ input {
   padding-top: 12px;
   padding-left: 42px;
   padding-bottom: 12px;
-  transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(border);
 }
 .input__field:focus {
   border: 1px solid var(--accent-text-color);
@@ -669,9 +500,7 @@ input {
   top: 34px;
   left: 15px;
   fill: currentColor;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(fill);
 }
 .input__field:focus + .input__icon {
   fill: var(--accent-text-color);
@@ -702,7 +531,6 @@ input {
   display: block;
   font-size: 14px;
   line-height: 1.7;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-left: 37px;
 }
@@ -716,9 +544,7 @@ input {
   width: 16px;
   height: 15px;
   background-image: url(../images/images-optimisized/svg/checkbox.svg);
-  transition-property: background-image, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(background-image, background-color);
 }
 .agreement__label:hover::before {
   background-image: url(../images/images-optimisized/svg/checkbox-focus.svg);
@@ -734,9 +560,7 @@ input {
   background-image: url(../images/images-optimisized/svg/check-agreement.svg);
   background-size: contain;
   background-origin: border-box;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(fill);
 }
 .agreement__link {
   text-decoration-line: underline;
@@ -795,13 +619,10 @@ input {
   font-size: 16px;
   line-height: 1.6;
   text-align: center;
-  letter-spacing: 0.03em;
   border-radius: 4px;
   padding: 6px 22px;
   cursor: pointer;
-  transition-property: color, background-color, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(color, background-color, box-shadow);
 }
 .button__filter:hover,
 .button__filter:focus {
@@ -854,9 +675,7 @@ input {
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   opacity: 0;
-  transition-property: transform, opacity, box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(transform, opacity, box-shadow);
 }
 .card__summary {
   font-size: 18px;
