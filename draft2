@@ -37,9 +37,7 @@
 
 /*************** PORTFOLIO ***************/
 /*************** PORTFOLIO-HEADER ***************/
-.header__border {
-  border-bottom: 1px solid #ececec;
-}
+
 /*************** PORTFOLIO-MAIN ***************/
 .portfolio {
   padding-top: 94px;

@@ -1,22 +1,29 @@
 @import 'base/colors';
+@import 'base/typography';
+@import 'base/normalize';
 @import 'base/reset';
-@import 'base/normalize' @import 'base/typography';
 
 @import 'abstracts/mixins';
 @import 'abstracts/placeholders';
 
-@import 'layout/header';
-@import 'layout/logo';
-@import 'layout/navigation';
-@import 'layout/header-contacts';
-@import 'layout/hero';
-@import 'layout/benefits';
-@import 'layout/activity';
-@import 'layout/team';
-@import 'layout/clients';
-@import 'layout/footer-contacts';
-@import 'layout/footer-join';
-@import 'layout/footer-subscribe';
-@import 'layout/modal';
-@import 'layout/modal-input';
-@import 'layout/modal-agreement';
+@import 'layout//logo/logo';
+
+@import 'layout/header/header';
+@import 'layout/header/navigation';
+@import 'layout/header/header-contacts';
+
+@import 'layout/footer/footer-contacts';
+@import 'layout/footer/footer-join';
+@import 'layout/footer/footer-subscribe';
+
+@import 'layout/index/hero';
+@import 'layout/index/benefits';
+@import 'layout/index/activity';
+@import 'layout/index/team';
+@import 'layout/index/clients';
+
+@import 'layout/modal/modal';
+@import 'layout/modal/modal-input';
+@import 'layout/modal/modal-agreement';
+
+@import 'layout/portfolio/portfolio-header';
